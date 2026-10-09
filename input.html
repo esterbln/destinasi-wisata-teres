@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Data Pengunjung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Form Data Pengunjung</h2>
+    <form>
+      <div class="input-group">
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" placeholder="Masukan Nama" required>
+      </div>
+
+      <div class="input-group">
+        <label for="npm">NPM:</label>
+        <input type="number" name="npm" id="npm" placeholder="Masukan NPM" required>
+      </div>
+
+      <div class="input-group">
+        <label for="tanggal_berkunjung">Tanggal Berkunjung:</label>
+        <input type="date" name="tanggal_berkunjung" id="tanggal_berkunjung" required>
+      </div>
+
+      <div class="input-group">
+        <label for="jurusan">Jurusan:</label>
+        <select name="jurusan" id="jurusan" required>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Informatika">Informatika</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <input type="radio" id="laki-laki" name="jenisKelamin" value="Laki-laki" required>
+          <label for="laki-laki">Laki-laki</label>
+          <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
+          <label for="perempuan">Perempuan</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="tempat">Tempat Yang Dituju:</label>
+        <input type="text" name="tempat" id="tempat" placeholder="Masukan Nama Tempat" required>
+      </div>
+
+      <div class="button-group">
+        <a href="index.html"><button type="button">Batal</button></a>
+        <button type="submit">Simpan</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
